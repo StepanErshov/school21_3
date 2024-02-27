@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <locale.h>
 
 #define width 80   // ширина
 #define height 25  // высота
@@ -11,6 +12,7 @@ int count_neighbours(int board[][width], int x, int y);  // считаем ко�
 void next_generation(int board[][width]);  // печать следующего поколения
 
 int main(int argc, char *argv[]) {
+    setlocale(LC_ALL, "Rus");
     int time;
     (void)argc;
     int board[height][width];

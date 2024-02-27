@@ -5,7 +5,7 @@ EXECUTABLE=$(BUILD_DIR)/Quest_1
 SOURCES=s21_string.c s21_string_test.c
 OBJECTS=$(SOURCES:.c=.o)
 
-build: strlen_tests strcmp_test
+build: strlen_tests strcmp_tests strcpy_tests strcat_tests strchr_tests strstr_tests strtok_tests
 strlen_tests: s21_string.o 
 	$(CC) $(CFLAGS) $(BUILD_DIR)s21_string.o s21_string_test.c -D quest1 -o $(BUILD_DIR)Quest_1
 strcmp_tests: s21_string.o

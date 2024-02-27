@@ -1,5 +1,4 @@
 #include "s21_string.h"
-
 #include <stdio.h>
 
 void s21_strlen_test() {
@@ -57,7 +56,7 @@ void s21_strchr_test() {
     char *found_char = s21_strchr(str, target_char);
 
     if (found_char) {
-        printf("Input: \"%s\", '%c'\nOutput: Found at index %ld\nResult: SUCCESS\n", str, target_char,
+        printf("Input: \"%s\", '%c'\nOutput: Found at index %lld\nResult: SUCCESS\n", str, target_char,
                found_char - str);
     } else {
         printf("Input: \"%s\", '%c'\nOutput: Not found\nResult: FAIL\n", str, target_char);
